@@ -17,6 +17,19 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+-- local jdtls = require('jdtls')
+-- local root_dir = vim.fn.getcwd()
+-- local jar_path = root_dir .. 'lib/EV3JLib.jar'
+-- jdtls.start_or_attach({
+--     cmd = { 'java', '-jar', '/path/to/jdtls.jar' },
+--     root_dir = root_dir,
+--     settings = {
+--         java = {
+--             classpath = { jar_path },
+--         },
+--     },
+-- })
+
 -- lspconfig.rust_analyzer.setup ({
 --   on_attach = nvlsp.on_attach,
 --   on_init = nvlsp.on_init,
