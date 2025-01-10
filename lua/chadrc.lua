@@ -6,12 +6,16 @@
 local M = {}
 
 M.base46 = {
-	theme = "gruvchad",
+	theme = "chadracula",
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },
 	-- 	["@comment"] = { italic = true },
 	-- },
 }
+
+vim.opt.foldmethod = 'expr'
+vim.opt.foldexpr = 'nvim_treesitter#foldexpr()'
+vim.opt.foldlevelstart = 99  -- Open all folds by default
 
 return M
